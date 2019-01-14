@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>
+      HALA: Hello!
+    </title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/tachyons.css">
+  </head>
+  <body class="sans-serif bg-navy navy">
+    <div class="mw8 center h-100 flex flex-column ph2"> <!-- mw8 class defines width, could be removed to make content full-screen or try mw7 / mw9 -->
+
+
+      <!-- Navigation bar -->
+      <div class="flex items-center justify-between pv2" style="min-height:48px;">
+
+        <div class="flex items-center ml2" style="width:128px; height:32px;">
+          <img class="" src="./assets/img/hala-logo.svg" alt="">
+        </div>
+
+        <div class="">
+          <img class="mr3 o-60 hover-o-100 pointer" src="./assets/img/24icn-refresh-white.svg" title="Refresh conversation" alt="">
+          <img class="mr3 o-60 hover-o-100 pointer" src="./assets/img/24icn-mic-off-white.svg" title="Turn microphone ON"alt="">
+          <img class="mr3 o-60 hover-o-100 pointer" src="./assets/img/24icn-vol-off-white.svg" title="Turn sound ON" alt="">
+          <img onclick="toggleMenu()" class="mr2 o-60 hover-o-100 pointer show-chat-menu-dd" src="./assets/img/24icn-hamburger-white.svg" title="" alt="">
+
+          <!-- Dropdown menu -->
+          <div id="chat-menu-dd" class="chat-menu-dd bg-blue-purple br1 shadow-4 white" style="width:200px;">
+            <div class="pa2 flex justify-between items-center">
+              <p class="dib ph1 ma0">Andrii Rudchuk</p>
+              <img class="o-60 hover-o-100 pointer" class="v-btm" src="./assets/img/24icn-close-white.svg" alt="">
+            </div>
+            <div class="bg-black-05 bt b--black-10">
+              <ul class="list pa1 ma0">
+                <li><a href="" class="db link-menu white o-60 hover-o-100 pa2 br2">Profile</a></li>
+                <li><a href="" class="db link-menu white o-60 hover-o-100 pa2 br2">Account</a></li>
+                <li><a href="" class="db link-menu white o-60 hover-o-100 pa2 br2">Support</a></li>
+              </ul>
+              <ul class="list pa1 ma0 bt b--black-10">
+                <li><a href="" class="db link-menu white o-60 hover-o-100 pa2 br2">Log out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- Chat container -->
+      <div class="flex flex-column flex-auto bg-white br1 br--top">
+        <div class="flex-auto overflow-scroll">
+
+          <!-- Hello message -->
+          <div class="pa2">
+            <div class="ph2 pv4 pv5-ns w-100 tc">
+              <div class="measure-wide lh-copy center">
+                <p class="f3 mb0">👋</p>
+                <p class="">Dear $userFirstName,</p>
+                <p class="mb4">We have prepared the <a class="link" href="#">Manual</a> for you, that will help you to get the full overview of the solution.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hala message -->
+          <div class="ph2 mb2">
+            <div class="pa2 bg-navy-near-white br1">
+              <div class="flex items-center mb2">
+                <div class="flex-none w2 h2 dib mr2"><img class="v-mid w-100" src="./assets/img/hala-icon.svg" alt=""></div>
+                <h4 class="w-100 mv0">Hala:</h4>
+                <span class="normal f6 o-60 ml2">09:57</span>
+              </div>
+              <div class="ml4 pl2">
+                <p class="mv2 lh-copy">Hello, how can I help you?</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- User message -->
+          <div class="ph2 mb2">
+            <div class="pa2">
+              <div class="flex items-center mb2">
+                <div class="flex-none bg-blue-purple br-100 w2 h2 dib mr2 tc"><p class="mv0 pt1 f6 fw5 white aa">AR</p></div>
+                <h4 class="w-100 mv0">You:</h4>
+                <span class="normal f6 o-60 ml2">09:57</span>
+              </div>
+              <div class="ml4 pl2">
+                <p class="mv2 lh-copy">Hey, what you can do?</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hala message x2 -->
+          <div class="ph2 mb2">
+            <div class="pa2 bg-navy-near-white br1">
+              <div class="flex items-center mb2">
+                <div class="flex-none w2 h2 dib mr2"><img class="v-mid w-100" src="./assets/img/hala-icon.svg" alt=""></div>
+                <h4 class="w-100 mv0">Hala:</h4>
+                <span class="normal f6 o-60 ml2">09:57</span>
+              </div>
+              <div class="ml4 pl2">
+                <p class="mv2 lh-copy">I am trained to work with SAP systems, make configuration, create master data objects in SAP, create incidents. For example you can ask create new user or check balance. I am trained to work with SAP systems, make configuration, create master data objects in SAP, create incidents. For example you can ask create new user or check balance.I am trained to work with SAP systems, make configuration, create master data objects in SAP, create incidents. For example you can ask create new user or check balance.I am trained to work with SAP systems, make configuration, create master data objects in SAP, create incidents. For example you can ask create new user or check balance.</p>
+                <p class="mv2 pt2 lh-copy"><span class="normal fr f6 o-60 ml2">10:00</span> Is there anything else I could help you with?</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- User message -->
+          <div class="ph2 mb2">
+            <div class="pa2">
+              <div class="flex items-center mb2">
+                <div class="flex-none bg-blue-purple br-100 w2 h2 dib mr2 tc"><p class="mv0 pt1 f6 fw5 white aa">AR</p></div>
+                <h4 class="w-100 mv0">You:</h4>
+                <span class="normal f6 o-60 ml2">10:07</span>
+              </div>
+              <div class="ml4 pl2">
+                <p class="mv2 lh-copy">Yes, show me puppies!</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hala message x2 -->
+          <div class="ph2 mb2">
+            <div class="pa2 bg-navy-near-white br1">
+              <div class="flex items-center mb2">
+                <div class="flex-none w2 h2 dib mr2"><img class="v-mid w-100" src="./assets/img/hala-icon.svg" alt=""></div>
+                <h4 class="w-100 mv0">Hala:</h4>
+                <span class="normal f6 o-60 ml2">09:57</span>
+              </div>
+              <div class="ml4 pl2">
+                <p class="mv2 lh-copy">Let me better show you a business picture instead.</p>
+                <!-- Image embed -->
+                <div class="pl2 bl b--black-05 bw3 measure">
+                  <img class="br1" style="max-height:240px;" src="./assets/img/placeholder-img-1.jpg" alt="">
+                  <p class="mv2 o-60">random-picture.jpg (170kb)</p>
+                  <p class="mt2 mb0"><a href="" class="link">Download</a></p>
+                </div>
+                <!-- Quick reply -->
+                <p class="mv2 pt2 lh-copy"><span class="normal fr f6 o-60 ml2">10:21</span> Would you like to see abother picture?</p>
+                <div>
+                  <button type="button" class="btn btn-ghost mb1 pv1 ph2 f6">Yes, please</button>
+                  <button type="button" class="btn btn-ghost mb1 pv1 ph2 f6">Nope</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day info -->
+          <div class="pa2 mb2">
+            <div class="pa2 tc bg-navy-near-white">
+              <p class="mv0 o-60">Tuesday, 13th September</p>
+            </div>
+          </div>
+
+          <!-- User message -->
+          <div class="ph2 mb2">
+            <div class="pa2">
+              <div class="flex items-center mb2">
+                <div class="flex-none bg-blue-purple br-100 w2 h2 dib mr2 tc"><p class="mv0 pt1 f6 fw5 white aa">AR</p></div>
+                <h4 class="w-100 mv0">You:</h4>
+                <span class="normal f6 o-60 ml2">10:38</span>
+              </div>
+              <div class="ml4 pl2">
+                <p class="mv2 lh-copy">Hey Hala!</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hala message -->
+          <div class="ph2 mb2">
+            <div class="pa2 bg-navy-near-white br1">
+              <div class="flex items-center mb2">
+                <div class="flex-none w2 h2 dib mr2"><img class="v-mid w-100" src="./assets/img/hala-icon.svg" alt=""></div>
+                <h4 class="w-100 mv0">Hala:</h4>
+                <span class="normal f6 o-60 ml2">09:57</span>
+              </div>
+              <div class="ml4 pl2">
+                <p class="mv2 lh-copy">Hello, here is a video for you:</p>
+                <!-- Video embed -->
+                <div class="pl2 bl b--black-05 bw3 measure">
+                  <h4 class="mb2">Nature In Motion - Timelapse Compilation 2017</h4>
+                  <div class="aspect-ratio aspect-ratio--16x9">
+                    <iframe class="aspect-ratio--object cover" width="560" height="315" src="https://www.youtube.com/embed/KgMpKsp23yY?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                  <p class="mv2 o-60">https://www.youtube.com/watch?v=KgMpKsp23yY</p>
+                  <p class="mt2 mb0"><a target="_blank" href="https://www.youtube.com/watch?v=KgMpKsp23yY" class="link">Open link</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- User message -->
+          <div class="ph2 mb2">
+            <div class="pa2">
+              <div class="flex items-center mb2">
+                <div class="flex-none bg-blue-purple br-100 w2 h2 dib mr2 tc"><p class="mv0 pt1 f6 fw5 white aa">AR</p></div>
+                <h4 class="w-100 mv0">You:</h4>
+                <span class="normal f6 o-60 ml2">09:57</span>
+              </div>
+              <div class="ml4 pl2">
+                <p class="mv2 lh-copy">Please create new user</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hala message -->
+          <div class="ph2 mb2">
+            <div class="pa2 bg-navy-near-white br1">
+              <div class="flex items-center mb2">
+                <div class="flex-none w2 h2 dib mr2"><img class="v-mid w-100" src="./assets/img/hala-icon.svg" alt=""></div>
+                <h4 class="w-100 mv0">Hala:</h4>
+                <span class="normal f6 o-60 ml2">09:57</span>
+              </div>
+              <div class="ml4 pl2">
+                <!-- Smart form embed -->
+                <div class="pl2 bl b--black-05 bw3 measure">
+                  <h4 class="mb2">Smart Form - Create new user</h4>
+                  <p class="mt3 mb2 lh-copy">Displaying fields:
+                    <span class="dib br1 bg-navy-lighter-05 bg-white pa1 f6 fw5">
+                      <a class="pv1 ph1 br1 no-underline navy bg-white hover-o-100" href="">All</a>
+                      <a class="pv1 ph1 br1 no-underline navy o-60 hover-o-100" href="">Required only</a>
+                      <a class="pv1 ph1 br1 no-underline navy o-60 hover-o-100" href="">Optimal set</a>
+                    </span>
+                  </p>
+                  <form action="" class="mt3">
+                    <div class="">
+                      <label for="" class="b f6">User ID in SAP:</label>
+                      <input id="" type="text" name="" class="w-100 mt1 pv2 ph2 f5">
+                    </div>
+                    <div class="mt3">
+                      <label for="" class="b f6">First Name:</label>
+                      <input id="" type="text" name="" class="w-100 mt1 pv2 ph2 f5">
+                    </div>
+                    <div class="mt3">
+                      <label for="" class="b f6">Last Name:</label>
+                      <input id="" type="text" name="" class="w-100 mt1 pv2 ph2 f5">
+                    </div>
+                    <div class="mt3">
+                      <label for="" class="b f6">Company Name:</label>
+                      <input id="" type="text" name="" class="w-100 mt1 pv2 ph2 f5">
+                      <div class="mt1 f6 o-60">Most relevant value for this field: <span class="link-action fw5">Hala</span>.</div>
+                    </div>
+                    <div class="mt3">
+                      <label for="" class="b f6">E-mail address:</label>
+                      <input id="" type="text" name="" class="w-100 mt1 pv2 ph2 f5">
+                    </div>
+                    <div class="mt3">
+                      <label for="" class="b f6">Telephone number:</label><span class="fr f6 o-60">Optional</span>
+                      <input id="" type="text" name="" class="w-100 mt1 pv2 ph2 f5">
+                    </div>
+                    <div class="mt3">
+                      <label for="" class="b f6">Reason for new user creation:</label><span class="fr f6 o-60">Optional</span>
+                      <textarea id="" rows="2" name="" class="w-100 mt1 pv2 ph2 f5"></textarea>
+                      <div class="mt1 f6 o-60">Most relevant value for this field: <span class="link-action fw5">New joiner</span>, <span class="link-action fw5">New employee in Finance Department</span>.</div>
+                    </div>
+                    <div class="mt3">
+                      <input type="submit" value="Save" class="dib btn btn-blue pv2 ph3 f5">
+                      <input type="submit" value="Cancel" class="dib btn btn-ghost pv2 ph3 f5">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- User message -->
+          <div class="ph2 mb2">
+            <div class="pa2">
+              <div class="flex items-center mb2">
+                <div class="flex-none bg-blue-purple br-100 w2 h2 dib mr2 tc"><p class="mv0 pt1 f6 fw5 white aa">AR</p></div>
+                <h4 class="w-100 mv0">You:</h4>
+                <span class="normal f6 o-60 ml2">09:57</span>
+              </div>
+              <div class="ml4 pl2">
+                <p class="mv2 lh-copy">Hala, what can you do?</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hala message -->
+          <div class="ph2 mb2">
+            <div class="pa2 bg-navy-near-white br1">
+              <div class="flex items-center mb2">
+                <div class="flex-none w2 h2 dib mr2"><img class="v-mid w-100" src="./assets/img/hala-icon.svg" alt=""></div>
+                <h4 class="w-100 mv0">Hala:</h4>
+                <span class="normal f6 o-60 ml2">09:57</span>
+              </div>
+
+              <div class="ml4 pl2">
+
+                <p class="mv2 lh-copy">Hala's Digital Skills available for the usage:</p>
+                <div class="ph2 bl b--black-05 bw3">
+                  <h4 class="mb0">General skills</h4>
+                  <ul class="list ph0 mv0 lh-copy f6">
+                    <li class="mt1"><span class="link-action">Create new incident</span></li>
+                    <li class="mt1"><span class="link-action">Send notification to email</span></li>
+                    <li class="mt1"><span class="link-action">Send request for approval through email</span></li>
+                  </ul>
+                  <h4 class="mb0">SAP skills</h4>
+                  <ul class="list ph0 mv0 lh-copy f6">
+                    <li class="mt1"><span class="link-action">Reset password</span></li>
+                    <li class="mt1"><span class="link-action">Block user</span></li>
+                    <li class="mt1"><span class="link-action">Unblock user</span></li>
+                    <li class="mt1"><span class="link-action">Add new role</span></li>
+                    <li class="mt1"><span class="link-action">Determine missed authorization objects</span></li>
+                    <li class="mt1"><span class="link-action">Extend composite role</span></li>
+                    <li class="mt1"><span class="link-action">Get information about the user</span></li>
+                    <li class="mt1"><span class="link-action">Create new user</span></li>
+                    <li class="mt1"><span class="link-action">Get balance for GL account</span></li>
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Message input -->
+        <div class="pa2 bt black-10 bg-navy-near-white">
+          <div class="flex">
+            <textarea class="w-100 pv2 ph2 f5 mr2 chat-message" placeholder="Enter your message..." name="message" rows="2" class=""></textarea>
+            <a href=""><img class="mt2 mr2 o-60 hover-o-100" src="./assets/img/24icn-send.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="white o-40 rotate-270 lh-solid absolute fixed f6 aa" style="bottom:45px;right:-35px;z-index:-1;">Powered by Hala</p>
+
+    <!-- Dropdown script-->
+    <script>
+      function toggleMenu() {
+          document.getElementById("chat-menu-dd").classList.toggle("chat-menu-dd-toggle");
+      }
+
+      window.onclick = function(event) {
+        if (!event.target.matches('.show-chat-menu-dd')) {
+
+          var dropdowns = document.getElementsByClassName("chat-menu-dd");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('chat-menu-dd-toggle')) {
+              openDropdown.classList.remove('chat-menu-dd-toggle');
+            }
+          }
+        }
+      }
+    </script>
+
+  </body>
+</html>

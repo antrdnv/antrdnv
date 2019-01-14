@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>
+      HALA: Hello!
+    </title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/tachyons.css">
+  </head>
+  <body class="sans-serif bg-navy navy">
+    <div class="mw8 center h-100 flex flex-column ph2"> <!-- mw8 class defines width, could be removed to make content full-screen or try mw7 / mw9 -->
+
+
+      <!-- Navigation bar -->
+      <div class="flex items-center justify-between pv2" style="min-height:48px;">
+
+        <div class="flex items-center ml2" style="width:128px; height:32px;">
+          <img class="" src="./assets/img/hala-logo.svg" alt="">
+        </div>
+
+        <div class="">
+          <img class="mr3 o-60 hover-o-100 pointer" src="./assets/img/24icn-refresh-white.svg" title="Refresh conversation" alt="">
+          <img class="mr3 o-60 hover-o-100 pointer" src="./assets/img/24icn-mic-off-white.svg" title="Turn microphone ON"alt="">
+          <img class="mr3 o-60 hover-o-100 pointer" src="./assets/img/24icn-vol-off-white.svg" title="Turn sound ON" alt="">
+          <img onclick="toggleMenu()" class="mr2 o-60 hover-o-100 pointer show-chat-menu-dd" src="./assets/img/24icn-hamburger-white.svg" title="" alt="">
+
+          <!-- Dropdown menu -->
+          <div id="chat-menu-dd" class="chat-menu-dd bg-blue-purple br1 shadow-4 white" style="width:200px;">
+            <div class="pa2 flex justify-between items-center">
+              <p class="dib ph1 ma0">Andrii Rudchuk</p>
+              <img class="o-60 hover-o-100 pointer" class="v-btm" src="./assets/img/24icn-close-white.svg" alt="">
+            </div>
+            <div class="bg-black-05 bt b--black-10">
+              <ul class="list pa1 ma0">
+                <li><a href="" class="db link-menu white o-60 hover-o-100 pa2 br2">Profile</a></li>
+                <li><a href="" class="db link-menu white o-60 hover-o-100 pa2 br2">Account</a></li>
+                <li><a href="" class="db link-menu white o-60 hover-o-100 pa2 br2">Support</a></li>
+              </ul>
+              <ul class="list pa1 ma0 bt b--black-10">
+                <li><a href="" class="db link-menu white o-60 hover-o-100 pa2 br2">Log out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- Chat container -->
+      <div class="flex flex-column flex-auto bg-white br1 br--top">
+        <div class="flex-auto overflow-scroll">
+
+          <!-- Hello message -->
+          <div class="pa2">
+            <div class="ph2 pv4 pv5-ns pv6-l w-100 tc">
+              <div class="measure-wide lh-copy center">
+                <p class="f3 mb0">👋</p>
+                <p class="">Dear $userFirstName,</p>
+                <p class="mb4">Welcome to the Hala Digital Assistant. We have prepared the <a class="link" href="#">Manual</a> for you, that will help you to get the full overview of the solution.</p>
+                <form class="flex">
+                  <input id="" type="text" name="" class="w-100 pv2 ph2 f5" placeholder="Enter your message...">
+                  <div class="fr">
+                    <button type="button" class="fr dib btn btn-blue pa2 f5 ml2 ph3"><img class="v-btm" src="./assets/img/24icn-send-white.svg" alt="" style="width:24px;height:24px;"></button>
+                  </div>
+                </form>
+                <div class="mt2 lh-copy pl2">
+                    <p class="f6 o-60">Or start with:</p>
+                    <button type="button" class="btn btn-ghost mb1 pv1 ph2 f6">Hello Hala, what you can do?</button>
+                    <button type="button" class="btn btn-ghost mb1 pv1 ph2 f6">Give me balance for account...</button>
+                    <button type="button" class="btn btn-ghost mb1 pv1 ph2 f6">Open new period in a Company...</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <p class="white o-40 rotate-270 lh-solid absolute fixed f6 aa" style="bottom:45px;right:-35px;z-index:-1;">Powered by Hala</p>
+
+    <!-- Dropdown script-->
+    <script>
+      function toggleMenu() {
+          document.getElementById("chat-menu-dd").classList.toggle("chat-menu-dd-toggle");
+      }
+
+      window.onclick = function(event) {
+        if (!event.target.matches('.show-chat-menu-dd')) {
+
+          var dropdowns = document.getElementsByClassName("chat-menu-dd");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('chat-menu-dd-toggle')) {
+              openDropdown.classList.remove('chat-menu-dd-toggle');
+            }
+          }
+        }
+      }
+    </script>
+
+  </body>
+</html>
