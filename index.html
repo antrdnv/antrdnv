@@ -3,174 +3,140 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Anton Radionov – Designer</title>
     <meta name="author" content="Anton Radionov">
-    <meta name="description" content="Freelance Designer based in Riga, Latvia. Working on web and mobile applications, websites, marketing sites and everything else design.">
+    <meta name="description" content="Anton Radionov, freelance Designer based in Riga, Latvia. Working on web and mobile applications, websites, marketing and landing pages.">
+    <meta property="og:image" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-      body{background-color: #ECF1EA;}
-      *{font-family: Arial, sans-serif; }
-      a, .link-color{color: #3D2DE3;}
-      a:hover{text-decoration: none;}
       .collapsible{cursor: pointer; border: none; outline: none;}
       .active, .collapsible:hover{}
-      .collapsible:after{content: 'Show more...';}
-      .active:after{content: "Show less...";}
+      .collapsible:after{content: 'Read more';}
+      .active:after{content: "Hide info";}
       .content{max-height: 0; overflow: hidden;  transition: max-height 0.2s ease-out;}
     </style>
   </head>
-  <body class="lh-copy f5 f4-ns  near-black">
-    <div class="mw9 ma2 ma3-ns">
-      <div class="mh2 mh3-ns mb2 mb3-ns">
+  <body>
 
-        <div class="pv3 pv4-ns">
-          <div class="ph2 w-100 w-60-l center">
-            <p class="measure"><strong>Anton Radionov, Freelance Designer.</strong> Working on the web and mobile applications, business and marketing websites. Here are some thoughts on product design I'd like to share:</p>
-            <p class="measure"><strong>Scalability.</strong> Design is never done, therefore building the design system iteratively, with a focus on functions and user needs, is much more rational.</p>
-            <p class="measure"><strong>Aesthetics</strong> has a direct impact on usability and should serve to support and enhance the content and functionality. Reducing cognitive load, setting up a visual hierarchy, etc.</p>
-            <p class="measure"><strong>Content.</strong> All communication and interaction between product and user goes through the content.  It's crucial to think it through.</p>
-            <p class="measure"><strong>Strategy</strong> will balance all the above aspects and align them with the business goals. Design strategy will clarify what to design and why. </p>
-            <p class="measure"><a href="mailto:mail@aradionov.com">Send me an email</a> with any enquire, I'd be happy to chat.</p>
-          </div>
+    <div class="section-head bg-dark">
+      <div class="wrapper">
+        <svg class="sun" width="128" height="122" xmlns="http://www.w3.org/2000/svg"><g stroke="#FAF5E3" stroke-width="2" fill="none" fill-rule="evenodd" opacity=".8"><path d="M44.07 84.855c-14.061 7.537-6.854 3.297-21.501 12.9M29.035 59.813c-18.398-.467-9.043.937-27.984-4.744M33.32 35.402c-11.724-11.535-6.307-7.9-15.052-12.9M76.139 52.552c2.867-.616 3.529-5.57-.527-5.315-4.603 2.084-1.946 5.847.527 5.315zM60.858 55.806c3.5-.544 3.5-5.6-.523-5.344-4.076 1.06-1.95 5.728.523 5.344zM56.927 65.875c6.65 9.22 22.997 5.221 25.476-5.56M58.046 20.351C57.62 9.82 58.085 16.308 55.896 1M87.072 22.501c11.032-9.512 5.865-5.746 15.051-11.825M106.424 49.264c15.937 0 8.421.84 22.576-2.036M104.273 82.705l18.277 16.126M72.022 98.831c-.204 15.061.409 7.175-2.15 23.651"/><path d="M68.58 81.63c13.212 0 27.482-11.569 25.897-25.24C92.89 42.716 84.435 33.251 68.58 33.251c-15.856 0-24.84 8.94-23.255 23.137C46.91 70.587 55.367 81.63 68.58 81.63z"/></g></svg>
+        <p><img class="profile-photo br" src="./assets/antrdnv-photo.jpg" alt=""></p>
+        <p><strong>Anton Radionov, a freelance designer</strong> working with small and large companies on websites and applications, as well as brand identities and marketing collaterals. Primarily serving user needs and moving company towards business objectives.</p>
+        <p><a href="mailto:mail@aradionov.com">Send me an email</a> with any inquiry, let's have a chat.</p>
+      </div>
+      <img class="collage" src="./assets/collage.jpg" alt="">
+    </div>
+
+    <div class="section">
+      <div class="wrapper">
+
+        <p><strong>Currently, I'm looking for full-time or part-time opportunities</strong> and advising <a href="https://hala.ai/" target="_blank">Hala Digital</a>. In spare time working on <a href="https://antrdnv.github.io/showclock/" target="_blank">Showclock</a> - a platform to discover what movies are playing in nearest cinemas, and <a href="https://neatcreep.com/" target="_blank">Neat Creep</a> - a local community for creatives and artists.</p>
+        <hr>
+
+        <h5>Oct - Nov 2018</h5>
+        <p><strong>Built an MVP and design system for <a href="https://hala.ai/" target="_blank">Hala Digital</a>.</strong> AI Assistant which automates IT and Business processes for enterprises that use SAP, Oracle or Microsoft Dynamics.</p>
+        <p>I joined the team at an early stage when the number one priority was to ship sooner to prove the concept. Our approach was to build a scalable application with the system underneath that will allow us to iterate frequently without creating any development or design debt; content-oriented and seamless to use product.</p>
+        <p class="collapsible link-action mb0"></p>
+        <div class="content">
+          <img src="./assets/hala-chat.jpg" alt="">
+          <p>The AI-powered Chat interface is not a functional design that is expected to have using enterprise software. Our challenge was to prove that a chat interface could be functional as well. At every moment we are ready to support the user and guide him to task completion. For that, we deliberately choose what content we display at every step of the user flow.</p>
+          <img src="./assets/hala-application.jpg" alt="">
+          <p>Behind the chat we built an application to manage the system. The place where admins have a complete overview of usage, functionality to control AI, install new skills, browse integrations, etc.</p>
+          <p>Screens were designed in a browser, feel free to take a look on some pages: <a href="./hala-digital/chat-initial.html" target="_blank">chat-initial.html</a>, <a href="./hala-digital/analytics.html" target="_blank">analytics.html</a>, <a href="./hala-digital/integrations-catalogue.html" target="_blank">integrations-catalogue.html</a>, <a href="./hala-digital/usage-dashboard.html" target="_blank">usage-dashboard.html</a>, <a href="./hala-digital/404.html" target="_blank">404.html</a>, <a href="./hala-digital/email-template.html" target="_blank">email-template.html</a>.</p>
+          <p>This project is not launched and currently available only for closed beta.</p>
         </div>
+        <hr>
 
-        <div class="flex flex-wrap justify-between pv3 pv4-ns bb bt">
-          <p class="ph2 w-100 w-20-l"><a href="https://hala.ai/" target="_blank">Hala Digital</a></p>
-          <div class="w-100 w-60-l">
-            <p class="ph2 measure">By connecting artificial intelligence, knowledge, and business rules Hala team created an AI Assistant which automates IT and Business processes for enterprises. I was hired to lead design. Start building a design system and ensure consistency. Produce design quickly and iterate frequently. Together we built an MVP in 4 sprints in shape of HTML pages.</p>
-            <span class="ph2 collapsible o-60"></span>
-            <div class="content ph2">
-              <p class="measure">Users will need to interact trough chat interface. And this is not their usual experience interacting with large databases. So, our strategy was to design a content first product asap, based on a design system that enables a clear communication between us and users. And start talking to them to impove the product.</p>
-              <img class="pa1 bg-black-05 pa1 bg-black-05 w-100 measure-ns mt3 mt4-ns br1" src="./assets/screenshot-hala.png" alt="">
-              <p class="measure mt2">Product was designed with HTML and <a href="http://tachyons.io/" target="_blank">Tachyons</a> CSS toolkit. Here are some pages: <a href="./hala-digital/chat-initial.html" target="_blank">chat-initial.html</a>, <a href="./hala-digital/chat.html" target="_blank">chat.html</a>, <a href="./hala-digital/log-in.html" target="_blank">log-in.html</a>, <a href="./hala-digital/confirmation-link.html" target="_blank">confirmation-link.html</a>, <a href="./hala-digital/legal-info.html" target="_blank">legal-info.html</a>, <a href="./hala-digital/404.html" target="_blank">404.html</a>, <a href="./hala-digital/500.html" target="_blank">500.html</a>.</p>
-              <img class="pa1 bg-black-05 w-100 measure-ns mt3 mt4-ns br1" src="./assets/screenshot-hala-portal.png" alt="">
-              <p class="measure mt2"><strong>Portal.</strong> Back-side of the Chat where admins and organisations manage system. Few of Portal pages: <a href="./hala-digital/analytics.html" target="_blank">analytics.html</a>, <a href="./hala-digital/integrations-catalogue.html" target="_blank">integrations-catalogue.html</a>, <a href="./hala-digital/integration-ibm.html" target="_blank">integration-ibm.html</a>, <a href="./hala-digital/usage-dashboard.html" target="_blank">usage-dashboard.html</a></p>
-              <p class="measure mt2"><strong>Emails.</strong> Same like other marketing materials were designed by following already established design patterns. Few email templates: <a href="./hala-digital/confirmation-link.html" target="_blank">confirmation-link.html</a>, <a href="./hala-digital/temporary-password.html" target="_blank">temporary-password.html</a></p>
-              <p class="measure i o-60">This is still an ongoing project.</p>
-            </div>
-          </div>
-          <p class="ph2 w-100 w-20-l tr-l">Oct 2018 - Present</p>
+        <h5>Jan - Sep 2018</h5>
+        <p><strong>Worked with marketing team at <a href="https://semaphoreci.com/" target="_blank">Semaphore CI</a>.</strong> Continuous integration and delivery platform powering the world’s best engineering teams.</p>
+        <p>We started by conducting a design audit and later proceeded with website optimization. Together we increased a conversion rate of several pages, created landing pages, launched an e-book, and worked on the marketing website, blog, and community redesign.</p>
+        <hr>
+
+        <h5>Nov 2017</h5>
+        <p><strong>Design at Flipboook.</strong> Creative and emotional gift idea, a flipbook that's created from a video. A project where I had complete freedom in creativity.</p>
+        <p class="collapsible link-action mb0"></p>
+        <div class="content">
+          <p>Conducting research and analyzing market showed us that there was nothing alike. Only a few outdated options that would hardly explain what flipbook is. So we had to compete in a gift market instead, where emotions are driving force.</p>
+          <img src="./assets/flipboook-homepage.jpg" alt="">
+          <p>Showcase the product, inspire visitors, establish credibility and answer frequently asked questions was a bottom line requirement for the page. The target audience was quite broad, it's anyone who has decided to look for a gift online. With that in mind, we designed a warm and straightforward experience that would eliminate all barriers from purchasing the product.</p>
+          <img src="./assets/flipboook-checkout.jpg" alt="">
+          <p>Checkout experience with focus on a video.</p>
+          <img src="./assets/flipboook-confirmation-email.jpg" alt="">
+          <p>Email with order confirmation.</p>
+          <img src="./assets/flipboook-admin.jpg" alt="">
+          <p>Admin panel with list of orders and key functionality.</p>
+          <img src="./assets/flipboook-ui-kit.jpg" alt="">
+          <p>Delivery included User Interface Kit with essential elements and components.</p>
         </div>
+        <hr>
 
-        <div class="flex flex-wrap justify-between pv3 pv4-ns bb">
-          <p class="ph2 w-100 w-20-l"><a href="https://semaphoreci.com/" target="_blank">Semaphore CI</a></p>
-          <div class="w-100 w-60-l">
-            <p class="ph2 measure">Continuous integration and delivery platform powering the world’s best engineering teams. Full-time position where I worked in-hand with the marketing team on the website, emails, landing pages and social media materials.</p>
-          </div>
-          <p class="ph2 w-100 w-20-l tr-l">Jan 2018 - Sep 2018</p>
+        <h5>Feb 2016 - Aug 2017</h5>
+        <p><strong>Led product design at <a href="https://airfy.com/" target="_blank">Airfy</a>.</strong> Guest WiFi solution and digital marketing automation to increase visitor retention and grow businesses locally.</p>
+        <p>Airfy aimed to become a one-stop solution for wi-fi and marketing. Leveraging technology a huge spectrum of possibilities opened to them. My task was to design them all with focus on aesthetics and make products consistent and pleasant to use.</p>
+        <p class="collapsible link-action mb0"></p>
+        <div class="content">
+          <img src="./assets/airfy-homepage.jpg" alt="">
+          <p>The target audience was local business owners/managers, small stores and retails chains. Airfy customers would get extensive analytics of by-passers and visitors, a number of marketing tools like visitor profiling and surveying, custom webpages, targeted advertisement, automated marketing, etc. and most important product - seamless wi-fi management system.</p>
+          <p>To provide a better service to end-customers Airfy worked with local partners and distributors who'd have their own ecosystem within the application. Complex business could be inside, but the product had to be simplified as much as possible. In total, we had 26 sub-projects created and designed ±350 pages.</p>
+          <img src="./assets/airfy-structure.jpg" alt="">
+          <p>The application had 4 different user types: Customers, Partners, Distributors, Administrators. They all had a completely different set of features and a slightly customized interface.</p>
+          <img src="./assets/airfy-app-portal.jpg" alt="">
+          <img src="./assets/airfy-app-godview.jpg" alt="">
+          <img src="./assets/airfy-app-admin.jpg" alt="">
+          <p>Creation of new account and software installation was custom for each user type.</p>
+          <img src="./assets/airfy-register.jpg" alt="">
+          <img src="./assets/airfy-register-force.jpg" alt="">
+          <img src="./assets/airfy-register-public.jpg" alt="">
+          <p>One of the key features for business owners was a survey that visitors had to complete in order to get access to free wi-fi.</p>
+          <img src="./assets/airfy-survey.jpg" alt="">
+          <p>Design at Airfy also required a creation of emails, advertisements and various graphics.</p>
+          <img src="./assets/airfy-emails.jpg" alt="">
+          <img src="./assets/airfy-pcb.jpg" alt="">
+          <img src="./assets/airfy-ad.jpg" alt="">
         </div>
+        <hr>
 
-        <div class="flex flex-wrap justify-between pv3 pv4-ns bb">
-          <p class="ph2 w-100 w-20-l">Freelance</p>
-          <div class="w-100 w-60-l">
-            <p class="ph2 measure">Smaller projects are very interesting as well. They require less in depth analysis and less iterations, but provide a wider spectrum of possibilities, with it's own requirements and constraints.</p>
-            <span class="ph2 collapsible o-60"></span>
-            <div class="ph2 content">
-              <p class="measure">Here are few projetcs I worked on:</p>
-              <img class="pa1 bg-black-05 w-100 measure-ns mt3 mt4-ns br1" src="./assets/screenshot-movement-spontaneous.png" alt="">
-              <p class="measure mt2"><strong>Movement Spontaneous</strong> organise regular outdoor activities, collect experiences and train together for international expeditions. Design and front-end of the single page website was completed within a week. See live sample: <a href="./movement-spontaneous/index.html">index.html</a>.</p>
-              <img class="pa1 bg-black-05 w-100 measure-ns mt3 mt4-ns br1" src="./assets/screenshot-norstar.png" alt="">
-              <p class="measure mt2"><strong>Norstar.</strong> Corporate website for local wood drying business. </p>
-              <img class="pa1 bg-black-05 w-100 measure-ns mt3 mt4-ns br1" src="./assets/screenshot-rebel-tattoo.png" alt="">
-              <p class="measure mt2"><strong>Rebel Tattoo.</strong> Business website for local tattoo studio.</p>
-              <img class="pa1 bg-black-05 w-100 measure-ns mt3 mt4-ns br1" src="./assets/screenshot-bullet.png" alt="">
-              <p class="measure mt2"><strong>Bullet.</strong> Business website for local law firm.</p>
-              <img class="w-100 measure-ns mt3 mt4-ns" src="./assets/screenshot-wallter.png" alt="">
-              <p class="measure mt2"><strong>Wallter</strong> is a mobile application concept to help people manage their budget effeciently. Take a look on <a href="https://www.behance.net/gallery/35868969/wallter-can-I-afford-this" target="_blank">case study</a>.</p>
-              <img class="w-100 measure-ns mt3 mt4-ns" src="./assets/screenshot-sched.png" alt="">
-              <p class="measure mt2"><strong>Sched</strong> is a mobile application concept that would help people organize group events smoother. By helping to agree on the time and date for the event that would fit everyone.</p>
-            </div>
-          </div>
-          <p class="ph2 w-100 w-20-l tr-l">Jul 2017 - Present</p>
+        <h5>Jan 2016</h5>
+        <p><strong>Created a concept for budgeting app Wallter.</strong> Partially it was just for the practice and partially I wanted to see why most of the apps solving exact same issue end up cluttered and impossible to use.</p>
+        <p class="collapsible link-action mb0"></p>
+        <div class="content">
+          <img src="./assets/wallter-logo.jpg" alt="">
+          <img src="./assets/wallter-app.jpg" alt="">
+          <img src="./assets/wallter-landing-page.jpg" alt="">
         </div>
+        <hr>
 
-        <div class="flex flex-wrap justify-between pv3 pv4-ns bb">
-          <p class="ph2 w-100 w-20-l"><a href="https://flpbk.io/" target="_blank">Flipboook</a></p>
-          <div class="w-100 w-60-l overflow-visible">
-            <p class="ph2 measure">Creative idea for a gift - video converted into a physical flipbook. This was a side project where my job was to lead design.</p>
-            <span class="ph2 collapsible o-60"></span>
-            <div class="ph2 content">
-              <img class="pa1 bg-black-05 w-100 measure-ns mt3 mt4-ns br1" src="./assets/screenshot-flpbk.png" alt="">
-              <p class="measure mt2">Landing page.</p>
-              <img class="pa1 bg-black-05 w-100 measure-ns mt3 mt4-ns br1" src="./assets/screenshot-flpbk-checkout.png" alt="">
-              <p class="measure mt2">Checkout form.</p>
-              <img class="pa1 bg-black-05 w-100 measure-ns mt3 mt4-ns br1" src="./assets/screenshot-flpbk-orders.png" alt="">
-              <p class="measure mt2">Orders table.</p>
-            </div>
-          </div>
-          <p class="ph2 w-100 w-20-l tr-l">Jul 2017 - Present</p>
+        <h5>Jan 2015 - Jan 2016</h5>
+        <p><strong>Worked at <a href="https://dribbble.com/perspective" target="_blank">Perspective Digital</a>.</strong> A creative studio with focus on digital transformation and state-of-the-art product execution.</p>
+        <p>Project types varied from applications to platforms, logos and brand identities, corporate websites and marketing pages. We worked at a high pace and grew team x3 over the 1-year span, which also required to define multiple internal structures and processes.</p>
+        <hr>
+
+        <h5>Jul 2014 - Dec 2014</h5>
+        <p><strong>Practiced ux and ui at <a href="https://www.linkedin.com/company/bureau-farid-kalirad/" target="_blank">Bureau Farid Kalirad</a>.</strong> We worked through every little detail of branding, user interface and experience for iOS mobile application. Community driven recommendation app.</p>
+        <p class="collapsible link-action mb0"></p>
+        <div class="content">
+          <img src="./assets/cherrypick-ui.jpg" alt="">
         </div>
+        <hr>
 
-        <div class="flex flex-wrap justify-between pv3 pv4-ns bb">
-          <p class="ph2 w-100 w-20-l"><a href="https://airfy.com/" target="_blank">Airfy</a></p>
-          <div class="w-100 w-60-l">
-            <p class="ph2 measure">Airfy combines guest WiFi services and automated digital marketing to help grow local businesses. I was Lead Designer and worked on a website, applications (web and mobile), emails, ads (web and print), graphics and technical drawings.</p>
-            <span class="ph2 collapsible o-60"></span>
-            <div class="ph2 content">
-              <img class="pa1 bg-black-05 w-100 measure-ns mt3 mt4-ns br1" src="./assets/screenshot-airfy-homepage.png" alt="">
-              <p class="measure mt2">Homepage.</p>
-              <img class="pa1 bg-black-05 w-100 measure-ns mt3 mt4-ns br1" src="./assets/screenshot-airfy-portal.png" alt="">
-              <p class="measure mt2">Customer side of the application.</p>
-              <img class="pa1 bg-black-05 w-100 measure-ns mt3 mt4-ns br1" src="./assets/screenshot-airfy-godview.png" alt="">
-              <p class="measure mt2">Admin side of the application.</p>
-              <img class="pa1 bg-black-05 w-100 measure-ns mt3 mt4-ns br1" src="./assets/screenshot-airfy-partner.png" alt="">
-              <p class="measure mt2">Partner side of the application.</p>
-              <img class="w-100 measure-ns mt3 mt4-ns br1" src="./assets/screenshot-airfy-survey.png" alt="">
-              <p class="measure mt2">Survey.</p>
-              <img class="pa1 bg-black-05 w-100 measure-ns mt3 mt4-ns br1" src="./assets/screenshot-airfy-emails.png" alt="">
-              <p class="measure mt2">Emails.</p>
-              <img class="pa1 bg-black-05 w-100 measure-ns mt3 mt4-ns br1" src="./assets/screenshot-airfy-pcb.png" alt="">
-              <p class="measure mt2">PCB graphics.</p>
-            </div>
-          </div>
-          <p class="ph2 w-100 w-20-l tr-l">Mar 2016 - Jun 2017</p>
-        </div>
-
-
-        <div class="flex flex-wrap justify-between pv3 pv4-ns bb">
-          <p class="ph2 w-100 w-20-l"><a href="https://dribbble.com/perspective" target="_blank">Perspective Digital</a></p>
-          <div class="w-100 w-60-l">
-            <p class="ph2 measure">Full-time position in a design agency. We worked with large and small scale clients on applications (web and mobile), logos and brand identities, corporate websites and marketing pages.</p>
-          </div>
-          <p class="ph2 w-100 w-20-l tr-l">Feb 2015 - Feb 2016</p>
-        </div>
-
-        <div class="flex flex-wrap justify-between pv3 pv4-ns bb">
-          <p class="ph2 w-100 w-20-l"><a href="https://www.linkedin.com/company/bureau-farid-kalirad/" target="_blank">Bureau Farid Kalirad</a></p>
-          <div class="w-100 w-60-l">
-            <p class="ph2 measure">Junior designer position in a design boutique. We worked through every little detail of branding, user interface and experience for iOS mobile application.</p>
-            <span class="ph2 collapsible o-60"></span>
-            <div class="ph2 content">
-              <img class="w-100 measure-ns mt3 mt4-ns br1" src="./assets/screenshot-cherrypick.png" alt="">
-              <p class="measure mt2">Various screenshots of the application:</p>
-              <img class="w-100 measure-ns mt3 mt4-ns br1" src="./assets/screenshot-cherrypick-setup.png" alt="">
-              <img class="w-100 measure-ns mt3 mt4-ns br1" src="./assets/screenshot-cherrypick-misc.png" alt="">
-            </div>
-          </div>
-          <p class="ph2 w-100 w-20-l tr-l">Jul 2014 - Jan 2015</p>
-        </div>
-
-        <div class="flex flex-wrap justify-between pv3 pv4-ns bb">
-          <p class="ph2 w-100 w-20-l"><a href="https://www.esteriol.com/" target="_blank">Esteriol</a></p>
-          <div class="w-100 w-60-l">
-            <p class="ph2 measure">Full-time web designer position where I was responsible for design and front-end development. We worked on a medium size projects that usually required a branding and website development.</p>
-          </div>
-          <p class="ph2 w-100 w-20-l tr-l">Oct 2013 - Jul 2014</p>
-        </div>
-
-        <div class="pv3 pv4-ns">
-          <div class="w-100 w-60-l center">
-            <p class="ph2 measure">This was a brief walk-through of my experience. Take a look on <a href="https://dribbble.com/antrdnv" target="_blank">dribbble</a> for more visual works. Or <a href="mailto:mail@aradionov.com">send email</a> to discuss your project and how could I help you.</p>
-          </div>
-        </div>
+        <h5>Oct 2013 - Jul 2014</h5>
+        <p><strong>Worked as web designer at <a href="https://www.esteriol.com/" target="_blank">Esteriol</a>.</strong> I was responsible for design and front-end development. We worked on a medium size projects that usually required a branding and website development.</p>
 
       </div>
     </div>
+
+    <div class="section bg-dark">
+      <div class="wrapper">
+        <p>This was an extesive walk-through of my experience. Alternatively, you can look through my <a href="https://dribbble.com/antrdnv" target="_blank">dribbble</a> account for more visual works. Or <a href="mailto:mail@aradionov.com">contact me</a> to discuss your project and how I could help you.</p>
+      </div>
+    </div>
+
+
     <script>
     var coll = document.getElementsByClassName("collapsible");
     var i;
-
     for (i = 0; i < coll.length; i++) {
       coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
