@@ -9,13 +9,6 @@
     <meta name="description" content="Anton Radionov, freelance Designer based in Riga, Latvia. Working on web and mobile applications, websites, marketing and landing pages.">
     <meta property="og:image" content="./assets/antrdnv-photo.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      .collapsible{cursor: pointer; border: none; outline: none;}
-      .active, .collapsible:hover{}
-      .collapsible:after{content: 'Read more';}
-      .active:after{content: "Hide info";}
-      .content{max-height: 0; overflow: hidden;  transition: max-height 0.2s ease-out;}
-    </style>
   </head>
   <body>
 
@@ -23,7 +16,7 @@
       <div class="wrapper">
         <svg class="sun" width="128" height="122" xmlns="http://www.w3.org/2000/svg"><g stroke="#FAF5E3" stroke-width="2" fill="none" fill-rule="evenodd" opacity=".8"><path d="M44.07 84.855c-14.061 7.537-6.854 3.297-21.501 12.9M29.035 59.813c-18.398-.467-9.043.937-27.984-4.744M33.32 35.402c-11.724-11.535-6.307-7.9-15.052-12.9M76.139 52.552c2.867-.616 3.529-5.57-.527-5.315-4.603 2.084-1.946 5.847.527 5.315zM60.858 55.806c3.5-.544 3.5-5.6-.523-5.344-4.076 1.06-1.95 5.728.523 5.344zM56.927 65.875c6.65 9.22 22.997 5.221 25.476-5.56M58.046 20.351C57.62 9.82 58.085 16.308 55.896 1M87.072 22.501c11.032-9.512 5.865-5.746 15.051-11.825M106.424 49.264c15.937 0 8.421.84 22.576-2.036M104.273 82.705l18.277 16.126M72.022 98.831c-.204 15.061.409 7.175-2.15 23.651"/><path d="M68.58 81.63c13.212 0 27.482-11.569 25.897-25.24C92.89 42.716 84.435 33.251 68.58 33.251c-15.856 0-24.84 8.94-23.255 23.137C46.91 70.587 55.367 81.63 68.58 81.63z"/></g></svg>
         <p><img class="profile-photo br" src="./assets/antrdnv-photo.jpg" alt=""></p>
-        <p><strong>Anton Radionov, a designer</strong> working on websites and applications, as well as design systems and and brand identities. Currently doing design at <a href="https://www.mailerlite.com/" target="_blank">MailerLite</a> and having fun with <a href="https://neatcreep.com/" target="_blank">Neat Creep</a>. If you'd like to talk, just <a href="mailto:mail@aradionov.com">send me an email</a>.</p>
+        <p><strong>Anton Radionov, a designer</strong> working on websites and applications, as well as design systems and brand identities. Currently doing design at <a href="https://www.mailerlite.com/" target="_blank">MailerLite</a> and having fun with <a href="https://neatcreep.com/" target="_blank">Neat Creep</a>. If you'd like to talk, just <a href="mailto:mail@aradionov.com">send me an email</a>.</p>
       </div>
     </div>
 
@@ -41,21 +34,5 @@
       </div>
     </div>
 
-
-    <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        }
-      });
-    }
-    </script>
   </body>
 </html>
