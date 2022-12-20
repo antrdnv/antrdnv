@@ -121,7 +121,5 @@
 
     <p>You can read more about my experience on <a href="https://www.linkedin.com/in/antrdnv/" target="_blank">LinkedIn</a> and see older designs on <a href="https://dribbble.com/antrdnv" target="_blank">Dribbble</a>. Contact me via <a href="mailto:mail@aradionov.com">mail@aradionov.com</a>, we can have a call!</p>
 
-    <img alt="Profile photo" class="h-32 w-32 hidden" src="./assets/antrdnv.jpg" loading="lazy"/>
-
   </div>
 </template>
