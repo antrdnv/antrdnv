@@ -9,7 +9,7 @@ npm run build
 # navigate into the build output directory
 cd dist
 
-echo 'www.antrdnv.com' > CNAME
+echo 'antrdnv.com' > CNAME
 
 # if you are deploying to a custom domain
 # echo 'www.antrdnv.com' > CNAME
