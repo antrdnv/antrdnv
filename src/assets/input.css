@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {@apply underline;}
+
+.cut-corners {
+    --mask: 
+      conic-gradient(from 45deg at 8px 8px,#000 75%,#0000 0) -8px 0/100% 51% repeat-x,
+      conic-gradient(from 135deg at 8px calc(100% - 8px),#0000 25%,#000 0) -8px 100%/100% 51% repeat-x;	
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+  }
